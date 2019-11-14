@@ -12,4 +12,11 @@
         android:textColor="@android:color/holo_red_dark"
         android:text="profile details" />
 
+    <TextView
+        android:id="@+id/age1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/holo_red_dark"
+        />
 </FrameLayout>

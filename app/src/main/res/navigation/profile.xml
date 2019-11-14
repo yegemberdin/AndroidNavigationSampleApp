@@ -12,11 +12,22 @@
         tools:layout="@layout/fragment_profile" >
         <action
             android:id="@+id/action_profileFragment_to_profileDetailsFragment"
-            app:destination="@id/profileDetailsFragment" />
+            app:destination="@id/profileDetailsFragment" >
+        <argument
+            android:name="age"
+            app:argType="integer"
+            android:defaultValue="1" />
+        </action>
+
     </fragment>
     <fragment
         android:id="@+id/profileDetailsFragment"
         android:name="com.example.navigationarchitecturesample.ProfileDetailsFragment"
         android:label="fragment_profile_details"
-        tools:layout="@layout/fragment_profile_details" />
+        tools:layout="@layout/fragment_profile_details" >
+        <argument
+            android:name="age"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
 </navigation>

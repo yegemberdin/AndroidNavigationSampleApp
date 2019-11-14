@@ -22,7 +22,9 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         details?.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_profileFragment_to_profileDetailsFragment)
+            val age = 4
+            val action = ProfileFragmentDirections.actionProfileFragmentToProfileDetailsFragment(age)
+            Navigation.findNavController(it).navigate(action)
         }
     }
 
