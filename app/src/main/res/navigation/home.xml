@@ -2,14 +2,14 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
+    android:id="@+id/home"
     app:startDestination="@id/destination_login">
 
     <fragment
         android:id="@+id/destination_login"
         android:name="com.example.navigationarchitecturesample.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" >
+        tools:layout="@layout/fragment_login">
         <action
             android:id="@+id/action_destination_login_to_destination_home"
             app:destination="@id/destination_home"
@@ -22,9 +22,4 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
     </fragment>
-    <fragment
-        android:id="@+id/destination_profile"
-        android:name="com.example.navigationarchitecturesample.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
 </navigation>
