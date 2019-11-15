@@ -21,5 +21,8 @@
         android:name="com.example.navigationarchitecturesample.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="www.google.com/homeComponent" />
     </fragment>
 </navigation>
